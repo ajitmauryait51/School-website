@@ -1,0 +1,40 @@
+body {
+
+    font-family: Baskerville Old Face;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.login-box {
+    background-color: rgba(245, 245, 245, 0.761);
+    width: 300px;
+    margin: auto;
+    padding: 180px;
+    border-radius: 100px;
+}
+
+input {
+    border-color: aqua;
+    border: white;
+    width: 90%;
+    padding: 18px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #0066cc;
+}
+.Captcha{
+    color: rgb(93, 12, 180);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}

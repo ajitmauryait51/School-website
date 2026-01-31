@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .bg {
+            background-image: url("https://img.freepik.com/free-photo/empty-blackboard_53876-31358.jpg?semt=ais_hybrid&w=740&q=80");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+
+        .header {
+            background-image: url("banner.jpg");
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .header button {
+            float: right;
+            margin-top: -35px;
+            margin-right: 20px;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg">
+
+    <div class="header">
+        <h1>Welcome, Student</h1>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Attendance</h3>
+            <p>Total Days: 200</p>
+            <p>Present: 180</p>
+            <p>Percentage: 90%</p>
+        </div>
+
+        <div class="card">
+            <h3>Timetable</h3>
+            <p onclick="table()" style="cursor: pointer;">Click Here To See Your Timetable</p>
+        </div>
+
+        <div class="card">
+            <h3>Personal Details</h3>
+            <p onclick="pd()" style="cursor: pointer;">Click Here To Check Your Personal Details</p>
+        </div>
+
+        <div class="card">
+            <h3>Academic Details</h3>
+            <p>Seat no.:- CS54</p>
+            <p>Subject:- CS & Maths</p>
+            <p>Div:- L</p>
+            <p>Previous Grade:- DISTINCTION</p>
+        </div>
+
+        <div class="card">
+            <h3>Class Teacher Details</h3>
+            <p>Name:- Ashish Pandey</p>
+            <p>Subject: Computer Science</p>
+            <p>Contact: 9876543210</p>
+        </div>
+
+        <div class="card">
+            <h3>Notices</h3>
+            <p>📢 Unit Test Timetable</p>
+            <p>📢 Parents Meeting on Friday</p>
+            <p>📢 Assignments Submission Date</p>
+        </div>
+
+    </div>
+
+    <script>
+        function logout() {
+            window.location.href = "login.html";
+        }
+        function table() {
+            window.location.href = "TT.html";
+        }
+        function pd() {
+            window.location.href = "personal.html";
+        }
+    </script>
+</body>
+
+</html>

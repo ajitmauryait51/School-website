@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+    <style>
+
+        .info-bg {
+            background: linear-gradient(to right, #cfd9df, #e2ebf0);
+            display: flex;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .info-card {
+            background-color: white;
+            width: 420px;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+
+        .info-card h1 {
+            text-align: center;
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+
+    
+        .info-row {
+            margin-bottom: 10px;
+        }
+
+   
+        .label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .value {
+            color: #555;
+        }
+
+      
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 15px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="info-bg">
+
+    <div class="info-card">
+        <h1>Student Personal Information</h1>
+
+        <div class="info-row">
+            <span class="label">Name:</span>
+            <span class="value">Ajit Maurya</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Roll Number:</span>
+            <span class="value">51</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Class:</span>
+            <span class="value">12th</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Father's Name:</span>
+            <span class="value">Mr. Rakesh Maurya</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Mother's Name:</span>
+            <span class="value">Mrs. Sarita Maurya</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Address:</span>
+            <span class="value">Mumbai, Maharahstra, India</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Phone Number:</span>
+            <span class="value">9876543210</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Email:</span>
+            <span class="value">ajit123@gmail.com</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Date of Birth:</span>
+            <span class="value">05-10-2007</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Blood Group:</span>
+            <span class="value">AB+</span>
+        </div>
+
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "welcome.html";
+        }
+    </script>
+</body>
+</html>

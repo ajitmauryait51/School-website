@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body
+    background="https://img.freepik.com/free-vector/flat-back-school-pattern-design_23-2149493904.jpg?semt=ais_hybrid&w=740&q=80">
+
+    <div class="login-box">
+
+        <h1>TPB College of Science</h1>
+        <h2>Student Login</h2>
+
+        <input type="text" id="username" placeholder="Enter Username"><br><br>
+        <input type="password" id="password" placeholder="Enter Password"><br><br>
+
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script>
+
+        function login() {
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+
+            if (user === "1098" && pass === "5460") {
+                window.location.href = "captcha.html";
+            } else {
+                alert("Invalid Username or Password");
+            }
+        }
+    </script>
+</body>
+
+</html>
